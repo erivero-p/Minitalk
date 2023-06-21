@@ -6,7 +6,7 @@ Un pequeño programa de intercambio de datos utilizando señales de UNIX
 ```
 .
 ├── Makefile
-├── libft
+├── libft/
 ├── client.c
 ├── client_bonus.c
 ├── server.c
