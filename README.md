@@ -51,7 +51,7 @@ Además de write, malloc, free, ft_printf o cualquiera de libft.h, y getpid, ya 
 
 El cliente debe enviar, con señales unix, un string de caracteres al servidor. Por tanto, el `main` de mi cliente debe estar preparado para recibir argumentos, y mi función para enviar los bits (`send_bits`), deberá recibir un `int` con el pid del servidor. Además, deberá recibir un caracter, o bien una string de caracteres, dependerá de cómo queramos realizarlo.  En mi caso, mi main llama a `send_bits` con cada caracter.
 
-Cada caracter ocupa un byte, y por tanto, estará formado por un octeto de bits. Para poderlos enviar, debemos saber [cómo trabajar con bits.](https://www.notion.so/Operadores-de-bits-para-pencas-ce41792d63b445a79d6ab1aebe8497b3?pvs=21) 
+Cada caracter ocupa un byte, y por tanto, estará formado por un octeto de bits. Para poderlos enviar, debemos saber [cómo trabajar con bits.](https://github.com/erivero-p/42-Tutorials/tree/master/Bits%20For%20Dummies) 
 
 ### server.c
 
