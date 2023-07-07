@@ -13,7 +13,9 @@ void	send_bits(int pid, unsigned char octet)
 		else
 			kill(pid, SIGUSR2);
 		u >>= 1;
-		usleep(1500);
+		usleep(100);
+		pause();
+
 	}
 }
 
@@ -31,8 +33,8 @@ int	main(int ac, char **av)
 	int				i;
 	unsigned char	octet;
 
-    signal(SIGUSR1, receive_bits);
-    signal(SIGUSR2, receive_bits);
+	signal(SIGUSR1, receive_bits);
+	signal(SIGUSR2, receive_bits);
 	if (ac != 3)
 		ft_printf("parámetros no válidos\n");
 	else

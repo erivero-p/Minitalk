@@ -15,6 +15,7 @@ void	ft_server(int signal, siginfo_t *info, void *add_data)
 		c = 0;
 		i = 0;
 	}
+	usleep(150);
 	if (signal == SIGUSR1)
 		kill(info->si_pid, SIGUSR1);
 	else if (signal == SIGUSR2)
